@@ -20,9 +20,6 @@ dna_dict = {"A":"T",
             "N":"N",
             "n":"n"}
 
-def ATCG(strg, search=re.compile(r'[ATCGNatcgn]+').search):
-    return bool(search(strg))
-
 def main(wf):
     # The Workflow instance will be passed to the function
     # you call from `Workflow.run`
@@ -40,7 +37,7 @@ def main(wf):
             # Add an item to Alfred feedback
             wf.add_item(u'Random DNA Uppercase', dna, arg=dna, valid=True, icon="dna.icns")
             wf.add_item(u'Random DNA Lowercase', dna.lower(), arg=dna.lower(), valid=True, icon="dna.icns")
-    elif ATCG(args[0]) == True:
+    elif re.match("^[ATCG]+$", args[0]):
         from translate import translate
         complement = ''.join([dna_dict[x] for x in args[0]])
         wf.add_item(u'Complement', complement, arg=complement, valid=True, icon="dna.icns")
@@ -59,6 +56,8 @@ def main(wf):
         log.debug(AT_freq)
         freq += " | AT: {AT_freq}% ; GC: {GC_freq}%;".format(**locals())
         wf.add_item(u'Composition', freq)
+    else:
+        wf.add_item(u'Error', "String contains non-base characters", icon="dna.icns")
 
     # Send output to Alfred
     #log.debug(wf.send_feedback())
