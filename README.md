@@ -1,5 +1,8 @@
-# seq-utilities
-Alfred workflow with sequence utilities
+# seq-utilities 
+
+An Alfred workflow with several useful bioinformatic/sequence utilities.
+
+#### [Download](https://github.com/danielecook/seq-utilities/raw/workflow/Seq-Utilities.alfredworkflow)
 
 ## Usage
 
@@ -9,10 +12,12 @@ __Generate a random dna sequence 200 base pairs long.__
 
 __Generate the complement, reverse complement, RNA, and protein of a DNA sequence__
 
-	dna ATGTCCTCGTTCGACCGTCGTATTGAAGCTGCATGTAAATTCGATGATGAGCGTTATTATAAACAGTATCACAGATACTTCGACGTCCTGGCCCAAGTTCATTCGGTTGTCGAAACAATTAACGGCGCACAGATGTTGAGAGTGTGGAGAGGCC
+	dna ATGTCCTCGTTCGACCGTCGTATTGAAGCTGCATGTAAA
+	
+__Open up blast and pre-populate the search field__
+
+	blast ATGTCCTCGTTCGACCGTCGTATTGAAGCTGCATGTAAA
 
 
 ![demo](demo.gif)
 
-![Icon](icon.png)
-[Download](https://github.com/danielecook/seq-utilities/raw/workflow/Seq-Utilities.alfredworkflow)
