@@ -10,7 +10,7 @@ __Generate a random dna sequence 200 base pairs long.__
 
 __Generate the complement, reverse complement, RNA, and protein of a DNA sequence__
 
-	dna ATGTCCTCGTTCGACCGTCGTATTGAAGCTGCATGTAAATTCGATGATGAGCGTTATTATAAACAGTATCACAGATACTTCGACGTCCTGGCCCAAGTTCATTCGGTTGTCGAAACAATTAACGGCGCACAGATGTTGAGAGTGTGGAGAGGCC
+	dna ATGTCCTCGTTCGACCGTCGTATTGAAGCTGCATGTAAA
 	
 __Open up blast and pre-populate the search field__
 
