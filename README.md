@@ -2,6 +2,8 @@
 
 An Alfred workflow with several useful bioinformatic/sequence utilities.
 
+#### [Download](https://github.com/danielecook/seq-utilities/raw/workflow/Seq-Utilities.alfredworkflow)
+
 ## Usage
 
 __Generate a random dna sequence 200 base pairs long.__
@@ -18,4 +20,4 @@ __Open up blast and pre-populate the search field__
 
 
 ![demo](demo.gif)
-[Download](https://github.com/danielecook/seq-utilities/raw/workflow/Seq-Utilities.alfredworkflow)
+
