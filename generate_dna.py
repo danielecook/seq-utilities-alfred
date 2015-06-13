@@ -55,6 +55,7 @@ def main(wf):
         GC_freq = round((args[0].count("G")*1.0 + args[0].count("C"))/len(n_free)*100,2)
         log.debug(AT_freq)
         freq += " | AT: {AT_freq}% ; GC: {GC_freq}%;".format(**locals())
+        freq += " | Length: " + str(len(n_free))
         wf.add_item(u'Composition', freq)
     else:
         wf.add_item(u'Error', "String contains non-base characters", icon="dna.icns")
