@@ -18,6 +18,6 @@ __Open up blast and pre-populate the search field__
 
 	blast ATGTCCTCGTTCGACCGTCGTATTGAAGCTGCATGTAAA
 
+<img src="demo.gif" width="600px" height="300px" />
 
-![demo](demo.gif)
 
