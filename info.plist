@@ -29,6 +29,14 @@
 				<key>modifiersubtext</key>
 				<string></string>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>80E0C8F1-3F8B-4A0C-A14E-5B9A96E0E9CF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
 		</array>
 	</dict>
 	<key>createdby</key>
@@ -113,6 +121,31 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>output</key>
+				<integer>0</integer>
+				<key>removeextension</key>
+				<false/>
+				<key>sticky</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>Copied</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>80E0C8F1-3F8B-4A0C-A14E-5B9A96E0E9CF</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>plusspaces</key>
 				<false/>
 				<key>url</key>
@@ -163,6 +196,11 @@ THE SOFTWARE.</string>
 			<real>10</real>
 		</dict>
 		<key>5AFBCDA1-343D-46A6-88DC-C5904C4D5689</key>
+		<dict>
+			<key>ypos</key>
+			<real>130</real>
+		</dict>
+		<key>80E0C8F1-3F8B-4A0C-A14E-5B9A96E0E9CF</key>
 		<dict>
 			<key>ypos</key>
 			<real>130</real>
