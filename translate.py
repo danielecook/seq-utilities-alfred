@@ -1,3 +1,5 @@
+#!/usr/bin/python
+# encoding: utf-8
 
 bases = ['t', 'c', 'a', 'g']
 codons = [a+b+c for a in bases for b in bases for c in bases]

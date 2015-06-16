@@ -7,7 +7,9 @@ import re
 from workflow import Workflow, ICON_WEB, web
 
 
-log = None
+__version__ = '0.2'
+
+
 
 dna_dict = {"A":"T", 
             "T":"A",
@@ -66,10 +68,14 @@ def main(wf):
 
 
 if __name__ == '__main__':
-    wf = Workflow()
-    # Assign Workflow logger to a global variable, so all module
-    # functions can access it without having to pass the Workflow
-    # instance around
+    wf = Workflow(update_settings={
+        'github_slug': 'danielecook/seq-utilities',
+        'version': __version__,
+        'frequency': 7
+        })
+    if wf.update_available:
+        # Download new version and tell Alfred to install it
+        wf.start_update()
     log = wf.logger
     sys.exit(wf.run(main))
 
