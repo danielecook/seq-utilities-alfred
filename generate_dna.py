@@ -39,11 +39,11 @@ def main(wf):
             # Add an item to Alfred feedback
             wf.add_item(u'Random DNA Uppercase', dna, arg=dna, valid=True, icon="dna.icns")
             wf.add_item(u'Random DNA Lowercase', dna.lower(), arg=dna.lower(), valid=True, icon="dna.icns")
-    elif re.match("^[ATCG]+$", args[0]):
+    elif re.match("^[ATCG|atcg]+$", args[0]):
         from translate import translate
         complement = ''.join([dna_dict[x] for x in args[0]])
         wf.add_item(u'Complement', complement, arg=complement, valid=True, icon="dna.icns")
-        wf.add_item(u'Reverse Complement', complement[::-1], arg=complement, valid=True, icon="dna.icns")
+        wf.add_item(u'Reverse Complement', complement[::-1], arg=complement[::-1], valid=True, icon="dna.icns")
         
         rna = args[0].replace("T","U").replace("t","u")
         wf.add_item(u'RNA',rna, arg=rna, valid=True, icon="dna.icns")
